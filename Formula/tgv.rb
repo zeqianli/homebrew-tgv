@@ -6,11 +6,11 @@ class Tgv < Formula
     homepage "https://github.com/zeqianli/tgv/"
     version "0.0.3"
 
-    if Os.mac?
-        url "https://github.com/zeqianli/tgv/releases/download/v0.0.3/tgv-aarch64-apple-darwin.tar.gz"
+    if OS.mac?
+        url "https://github.com/zeqianli/tgv/releases/download/v#{version}/tgv-aarch64-apple-darwin.tar.gz"
         sha256 "bcff2b32e00013a1c6b0899a3edb7b6b4a842a0a60869d30c8a1fe6e52ddd6d5"
-    elsif Os.linux?
-        url "https://github.com/zeqianli/tgv/releases/download/v0.0.3/tgv-x86_64-linux-musl.tar.gz"
+    elsif OS.linux?
+        url "https://github.com/zeqianli/tgv/releases/download/v#{version}/tgv-x86_64-linux-musl.tar.gz"
         sha256 "4658009718b5155793e49b219ae17ca49b1c1cf8a0e0d4ccc12f81ef33860489"
     end
   
