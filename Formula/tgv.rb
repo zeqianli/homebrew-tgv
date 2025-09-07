@@ -1,17 +1,14 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Tgv < Formula
     desc "Terminal Genome Viewer"
     homepage "https://github.com/zeqianli/tgv/"
-    version "0.0.6"
+    version "0.1.0"
 
     if OS.mac?
         url "https://github.com/zeqianli/tgv/releases/download/v#{version}/tgv-aarch64-apple-darwin.tar.gz"
-        sha256 "b31f5f622c5e9a20749dae3dc67e434ad061c7e1df458b2740cbfea4a3a4b275"
+        sha256 "57d9c0854a9b235fa22d40620ef46039f18a991e5807de0ed4f8e5e8eb6752d9"
     elsif OS.linux?
         url "https://github.com/zeqianli/tgv/releases/download/v#{version}/tgv-x86_64-linux-musl.tar.gz"
-        sha256 "df3ed9992b51f1b9b89bf508cf47b0e4327d62937af8918e8ad564f7c0eea621"
+        sha256 "b8063f6346b674010170bb6f4df2c7be04b97e65fdcf79e0d38b7efb2d599b0b"
     end
   
     def install
