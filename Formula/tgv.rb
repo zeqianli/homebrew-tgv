@@ -1,14 +1,14 @@
 class Tgv < Formula
     desc "Terminal Genome Viewer"
     homepage "https://github.com/zeqianli/tgv/"
-    version "0.1.0"
+    version "0.2.0"
 
     if OS.mac?
         url "https://github.com/zeqianli/tgv/releases/download/v#{version}/tgv-aarch64-apple-darwin.tar.gz"
-        sha256 "57d9c0854a9b235fa22d40620ef46039f18a991e5807de0ed4f8e5e8eb6752d9"
+        sha256 "0508ae7e1237a7190c9a76d915c3cadf3dad2a5e29fd2d06cf3f4bad8cd8eac4"
     elsif OS.linux?
         url "https://github.com/zeqianli/tgv/releases/download/v#{version}/tgv-x86_64-linux-musl.tar.gz"
-        sha256 "b8063f6346b674010170bb6f4df2c7be04b97e65fdcf79e0d38b7efb2d599b0b"
+        sha256 "e63583f26bff3b1df4a023ac0e4219c3f90c33dc1d6bd8e1d97a66de130e68e5"
     end
   
     def install
